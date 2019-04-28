@@ -1,0 +1,44 @@
+<html>
+<head>
+  <script src="lib/sigma.min.js"></script>
+  <script src="lib/sigma.parsers.json.min.js"></script>
+  <script src="lib/sigma.neo4j.cypher.min.js"></script>
+  <script src="lib/sigma.layout.forceAtlas2.min.js"></script>
+</head>
+
+
+<div id="container">
+    <style>
+        #graph-container {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+    </style>
+    <div id="graph-container"></div>
+</div>
+
+<script type="application/javascript">
+
+  sigma.neo4j.cypher(
+            { url: 'http://localhost:7474', user: 'user', password: '12345' },
+            "MATCH (keanu:Person {name:'Keanu Reeves'})-[protagoniza:ACTED_IN]->(m)<-[actuo:ACTED_IN]-(coActors) RETURN keanu, m,coActors, protagoniza, actuo",
+            { container: 'graph-container' } ,
+            function(s) {
+                s.settings({
+                  edgeColor: 'default',
+                  defaultEdgeColor: '#457360',
+                });
+                s.graph.nodes().forEach(function(node){
+                  node.color = node.neo4j_labels[0]==="Person"?'#457360':'#CCCC8F';
+                  node.label = node.neo4j_data.title?node.neo4j_data.title:node.neo4j_data.name;
+                })
+                s.startForceAtlas2({worker: true, barnesHutOptimize: false});
+                s.refresh();
+            }
+    );
+
+</script>
+</html>

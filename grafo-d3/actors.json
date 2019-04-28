@@ -1,0 +1,1235 @@
+{
+    "results": [
+        {
+            "columns": [
+                "keanu",
+                "m",
+                "coActors",
+                "protagoniza",
+                "actuo"
+            ],
+            "data": [
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "17",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1937,
+                                    "name": "Jack Nicholson"
+                                }
+                            },
+                            {
+                                "id": "154",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "title": "Something's Gotta Give",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "219",
+                                "type": "ACTED_IN",
+                                "startNode": "17",
+                                "endNode": "154",
+                                "properties": {
+                                    "roles": [
+                                        "Harry Sanborn"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "221",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "154",
+                                "properties": {
+                                    "roles": [
+                                        "Julian Mercer"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "154",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "title": "Something's Gotta Give",
+                                    "released": 2003
+                                }
+                            },
+                            {
+                                "id": "155",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1946,
+                                    "name": "Diane Keaton"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "220",
+                                "type": "ACTED_IN",
+                                "startNode": "155",
+                                "endNode": "154",
+                                "properties": {
+                                    "roles": [
+                                        "Erica Barry"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "221",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "154",
+                                "properties": {
+                                    "roles": [
+                                        "Julian Mercer"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "The hottest data on earth. In the coolest head in town",
+                                    "title": "Johnny Mnemonic",
+                                    "released": 1995
+                                }
+                            },
+                            {
+                                "id": "102",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1968,
+                                    "name": "Dina Meyer"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "132",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "Johnny Mnemonic"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "134",
+                                "type": "ACTED_IN",
+                                "startNode": "102",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "Jane"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "The hottest data on earth. In the coolest head in town",
+                                    "title": "Johnny Mnemonic",
+                                    "released": 1995
+                                }
+                            },
+                            {
+                                "id": "103",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1958,
+                                    "name": "Ice-T"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "132",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "Johnny Mnemonic"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "135",
+                                "type": "ACTED_IN",
+                                "startNode": "103",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "J-Bone"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "100",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "The hottest data on earth. In the coolest head in town",
+                                    "title": "Johnny Mnemonic",
+                                    "released": 1995
+                                }
+                            },
+                            {
+                                "id": "101",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1947,
+                                    "name": "Takeshi Kitano"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "132",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "Johnny Mnemonic"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "133",
+                                "type": "ACTED_IN",
+                                "startNode": "101",
+                                "endNode": "100",
+                                "properties": {
+                                    "roles": [
+                                        "Takahashi"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "87",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Pain heals, Chicks dig scars... Glory lasts forever",
+                                    "title": "The Replacements",
+                                    "released": 2000
+                                }
+                            },
+                            {
+                                "id": "88",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1970,
+                                    "name": "Brooke Langton"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "114",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Shane Falco"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "115",
+                                "type": "ACTED_IN",
+                                "startNode": "88",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Annabelle Farrell"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "87",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Pain heals, Chicks dig scars... Glory lasts forever",
+                                    "title": "The Replacements",
+                                    "released": 2000
+                                }
+                            },
+                            {
+                                "id": "89",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1930,
+                                    "name": "Gene Hackman"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "114",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Shane Falco"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "116",
+                                "type": "ACTED_IN",
+                                "startNode": "89",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Jimmy McGinty"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "87",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Pain heals, Chicks dig scars... Glory lasts forever",
+                                    "title": "The Replacements",
+                                    "released": 2000
+                                }
+                            },
+                            {
+                                "id": "90",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1968,
+                                    "name": "Orlando Jones"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "114",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Shane Falco"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "117",
+                                "type": "ACTED_IN",
+                                "startNode": "90",
+                                "endNode": "87",
+                                "properties": {
+                                    "roles": [
+                                        "Clifford Franklin"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "11",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Evil has its winning ways",
+                                    "title": "The Devil's Advocate",
+                                    "released": 1997
+                                }
+                            },
+                            {
+                                "id": "13",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1940,
+                                    "name": "Al Pacino"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "22",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "11",
+                                "properties": {
+                                    "roles": [
+                                        "Kevin Lomax"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "24",
+                                "type": "ACTED_IN",
+                                "startNode": "13",
+                                "endNode": "11",
+                                "properties": {
+                                    "roles": [
+                                        "John Milton"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "11",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Evil has its winning ways",
+                                    "title": "The Devil's Advocate",
+                                    "released": 1997
+                                }
+                            },
+                            {
+                                "id": "12",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1975,
+                                    "name": "Charlize Theron"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "22",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "11",
+                                "properties": {
+                                    "roles": [
+                                        "Kevin Lomax"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "23",
+                                "type": "ACTED_IN",
+                                "startNode": "12",
+                                "endNode": "11",
+                                "properties": {
+                                    "roles": [
+                                        "Mary Ann Lomax"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1960,
+                                    "name": "Hugo Weaving"
+                                }
+                            },
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Everything that has a beginning has an end",
+                                    "title": "The Matrix Revolutions",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "18",
+                                "type": "ACTED_IN",
+                                "startNode": "4",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Agent Smith"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "15",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1967,
+                                    "name": "Carrie-Anne Moss"
+                                }
+                            },
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Everything that has a beginning has an end",
+                                    "title": "The Matrix Revolutions",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "16",
+                                "type": "ACTED_IN",
+                                "startNode": "2",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Trinity"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "15",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1961,
+                                    "name": "Laurence Fishburne"
+                                }
+                            },
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Everything that has a beginning has an end",
+                                    "title": "The Matrix Revolutions",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "17",
+                                "type": "ACTED_IN",
+                                "startNode": "3",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Morpheus"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "15",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "10",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1960,
+                                    "name": "Hugo Weaving"
+                                }
+                            },
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Free your mind",
+                                    "title": "The Matrix Reloaded",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "8",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "11",
+                                "type": "ACTED_IN",
+                                "startNode": "4",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Agent Smith"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1961,
+                                    "name": "Laurence Fishburne"
+                                }
+                            },
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Free your mind",
+                                    "title": "The Matrix Reloaded",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "8",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "10",
+                                "type": "ACTED_IN",
+                                "startNode": "3",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Morpheus"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1967,
+                                    "name": "Carrie-Anne Moss"
+                                }
+                            },
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Free your mind",
+                                    "title": "The Matrix Reloaded",
+                                    "released": 2003
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "8",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "9",
+                                "type": "ACTED_IN",
+                                "startNode": "2",
+                                "endNode": "9",
+                                "properties": {
+                                    "roles": [
+                                        "Trinity"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Welcome to the Real World",
+                                    "title": "The Matrix",
+                                    "released": 1999
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "8",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1978,
+                                    "name": "Emil Eifrem"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "0",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7",
+                                "type": "ACTED_IN",
+                                "startNode": "8",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Emil"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Welcome to the Real World",
+                                    "title": "The Matrix",
+                                    "released": 1999
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1960,
+                                    "name": "Hugo Weaving"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "0",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "type": "ACTED_IN",
+                                "startNode": "4",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Agent Smith"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Welcome to the Real World",
+                                    "title": "The Matrix",
+                                    "released": 1999
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1961,
+                                    "name": "Laurence Fishburne"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "0",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "type": "ACTED_IN",
+                                "startNode": "3",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Morpheus"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Movie"
+                                ],
+                                "properties": {
+                                    "tagline": "Welcome to the Real World",
+                                    "title": "The Matrix",
+                                    "released": 1999
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1964,
+                                    "name": "Keanu Reeves"
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "labels": [
+                                    "Person"
+                                ],
+                                "properties": {
+                                    "born": 1967,
+                                    "name": "Carrie-Anne Moss"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "0",
+                                "type": "ACTED_IN",
+                                "startNode": "1",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Neo"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "type": "ACTED_IN",
+                                "startNode": "2",
+                                "endNode": "0",
+                                "properties": {
+                                    "roles": [
+                                        "Trinity"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "errors": [
+    ]
+}

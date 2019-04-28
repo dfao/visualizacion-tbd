@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title>Grafo de Neo4j</title>
+   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+   <style>
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+.node{
+  cursor:pointer;
+}
+.node circle {
+  stroke: #444;
+  stroke-width: 1.5px;
+}
+.node text{
+  fill:#000;
+  font-size: 10px;
+  font-family: sans-serif;
+  opacity: 0.5;
+}
+.node text{
+  transition: 200ms ease;
+}
+.node:hover text{
+  transform: scale(1.5);
+  opacity: 1;
+}
+.Person{
+  fill: #E6C18A;
+}
+.Movie{
+  fill:#8AE6D3;
+}
+body {
+font-family: sans-serif;
+align-content: center;
+padding: 50px 20px;
+width: 100%;
+text-align: center;
+}
+h1{
+  font-size: 18px;}
+
+</style>
+</head>
+<body>
+  <h1>Ejemplo de grafo desde Neo4j</h1>
+  <p>
+    Red social en segundo grado
+  </p>
+<!--<code>
+  {"statements":
+ [{
+   "statement":"MATCH (keanu:Person {name:'Keanu Reeves'})-[protagoniza:ACTED_IN]->(m)<-[actuo:ACTED_IN]-(coActors) RETURN keanu, m,coActors, protagoniza, actuo",
+
+                  "resultDataContents":["graph"]}]
+                }
+</code>-->
+  <div id="graph"></div>
+  <script>
+
+  function idIndex(a,id) {
+  for (var i=0;i<a.length;i++) {
+    if (a[i].id == id) return i;}
+  return null;
+}
+
+  var width = 600, height = 400;
+    // force layout setup
+    var force = d3.layout.force()
+    .charge(-170)
+    .linkDistance(80)
+    .size([width, height]);
+
+    // lienzo svg
+    var svg = d3.select("#graph").append("svg")
+            .attr("width", width).attr("height", height)
+            .attr("pointer-events", "all");
+
+    // cargar datos del grafo
+    d3.json("./actors.json", function(error, res) {
+      if (error) return;
+
+      console.log('res', res);
+      var nodes=[], links=[];
+      res.results[0].data.forEach(function (row) {
+         row.graph.nodes.forEach(function (n) {
+           if (idIndex(nodes,n.id) == null)
+             nodes.push({
+               id:n.id,
+               label:n.labels[0],
+               title:n.properties.title?n.properties.title:n.properties.name
+             });
+         });
+         links = links.concat( row.graph.relationships.map(function(r) {
+           return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type, weight:1};
+         }));
+      });
+      graph = {nodes:nodes, links:links};
+      console.log(graph);
+
+      force.nodes(nodes).links(links).start();
+
+
+      // relaciones
+      var link = svg.selectAll(".link")
+              .data(graph.links).enter()
+              .append("line").attr("class", "link");
+
+      // nodos son contenedores 'g'
+      var node = svg.selectAll(".node")
+              .data(graph.nodes).enter()
+              .append("g")
+              .attr("class", function (d) { return "node "+d.label })
+              .on('click', function(d){console.log(d)})
+              .call(force.drag);
+
+      //círculos de nodos
+      node.append("circle")
+                .attr("r", 15);
+
+      //texto de nodos
+      node.append("text")
+              .text(function (d) { return d.title; });
+
+
+      force.on("tick", function() {
+          link.attr("x1", function(d) { return d.source.x; })
+                  .attr("y1", function(d) { return d.source.y; })
+                  .attr("x2", function(d) { return d.target.x; })
+                  .attr("y2", function(d) { return d.target.y; });
+
+                  node.attr("transform", function(d){return "translate("+d.x+","+d.y+")"})
+      });
+
+    });
+  </script>
+</body>
+</html>
